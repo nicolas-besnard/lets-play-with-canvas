@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	
+	<canvas width="512" height="480" id="canvas"></canvas>
+	<script type="text/javascript" src="js/underscore-min.js"></script>
+	<script type="text/javascript" src="js/engine.js"></script>
+	<script type="text/javascript" src="js/image.js"></script>
+	<script type="text/javascript" src="js/animation.js"></script>
+	<script type="text/javascript" src="js/input.js"></script>
+	<script type="text/javascript" src="js/entity/entity.js"></script>
+	<script type="text/javascript" src="js/entity/player.js"></script>
+	<script type="text/javascript" src="js/entity/missile.js"></script>
+	<script type="text/javascript" src="js/entity/enemy.js"></script>
+
+<!--	<script type="text/javascript" src="js/resources.js"></script>
+	
+	<script type="text/javascript" src="js/sprite.js"></script>
+	<script type="text/javascript" src="js/app.js"></script> !-->
+	<script type="text/javascript">
+	engine.init("#canvas", 360, 640);	
+
+	var player = new engine.EntityPlayer(engine.width / 2, engine.height - 64);
+	engine.addEntity(player);
+	</script>
+</body>
+</html>
